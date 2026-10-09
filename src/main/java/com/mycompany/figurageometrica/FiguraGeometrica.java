@@ -3,14 +3,25 @@
  */
 
 package com.mycompany.figurageometrica;
-
+import Vista.VistaRectangulo;
 /**
  *
  * @author USUARIO
  */
 public class FiguraGeometrica {
-
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
+     public static void main(String[] args) {
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+               
+                VistaRectangulo Vista = new VistaRectangulo();
+                
+              
+                Vista.setLocationRelativeTo(null);
+                
+             
+                Vista.setVisible(true);
+            }
+        });
     }
-}
+    }
